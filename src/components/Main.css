@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+ 
+ .main{
+  padding: 2rem;
+  color: black;
+ }
+
+.add-btn{
+    padding: 4rem;
+}
+
+
+ .main .c-head{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+ }
+
+ .todobtninput{
+    margin-top: 2rem;
+ }
+
+ .todomain{
+    display: flex;
+    overflow-wrap: normal;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+ }
+ 
+ /* todobox  */
+.todobox{
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding: 3rem;
+    width: 20rem;
+    max-height: 15rem;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: 0.5s ease;
+}
+
+.todobox .head{
+    font-size: 2rem;
+}
+
+.todobox .todocont{
+    font-size: 1.3rem;
+    color:  #000000;
+    font-weight: 600;
+   
+    /* font-family: 'Lobster Two', cursive; */
+}
+
+.todocont{
+    position: relative;
+    margin-top: 1rem;
+    z-index: 10;
+    
+}
+
+.inputcontainer{
+    /* width: 50%; */
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.4s ease;
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.todo-trans{
+    transform: translateY(-33rem);
+}
+
+.bg-hide{
+    opacity: 0;
+    visibility: hidden;
+    /* transform: translateY(-100rem); */
+}
+
+.todoboxbtn{
+    float: right;
+    margin-top: 1.2rem;
+    margin-bottom: -1.5rem;
+    margin-right: -2rem;
+}
+ /* end todobox */
+
+ /* checkcont */
+.checkcont{
+    position: absolute;
+    right: 7.5%;
+    top:4%;
+    padding: 0.05rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.unchkbtn{
+    position: absolute;
+    left: 3%;
+    width: 3rem;
+    margin-top: 0.2rem;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.checkcont:hover{
+   transform: scale(110%);
+   /* background-color: green; */
+}
+
+
+
+
+.checkcont .chkbtn{
+ width: 2.5rem;
+ margin-top: 0.3rem;
+ 
+}
+
+.checkcont .chkbtn:hover{
+    transform: scale(100%);
+}
+
+
+ /* end checkcont */
+
+ /* Edit input */
+ .editInput{
+    position:absolute;
+    z-index: -1;
+    max-height: 18rem;
+    transition: 0.5s ease;
+    margin-left: rem;
+    max-width: 22rem;
+ }
+
+ /* end Edit input */
+
+@media screen and (max-width: 992px) {
+
+    .todomain{
+        justify-content: center;
+    }
+
+    .editInput{
+        margin-left: 1rem;
+    }
+
+    /* Todo Form */
+    .mainInput{
+        /* display: none; */
+        min-width: 100%;
+
+    }
+ 
+    /* End Todo Form */
+  }

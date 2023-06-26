@@ -1,0 +1,24 @@
+.editInp input{
+    padding: 1.2rem;
+    margin-top: 0.8rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.editInp{
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: 1s ease;
+}
+
+
+
+.editInp .btn{
+    margin-top: 2rem;
+}
